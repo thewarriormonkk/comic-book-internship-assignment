@@ -3,7 +3,7 @@ const dotenv = require('dotenv').config();
 const bookRouter = require('./routes/bookRoutes');
 const DBConnection = require('./config/db');
 const errorHandler = require('./middleware/errorMiddleware');
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 
 // db connection
 DBConnection();
